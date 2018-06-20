@@ -1,0 +1,30 @@
+void IDfile (struct student stu[])
+{
+	int number, i;
+	char ch;
+	printf ("保存学生信息。\n");
+	printf ("输入保存信息学生的学号 ： \n");
+	scanf ("%d", &number);
+	for (i = 0; i < n; i++)
+	{
+		if (number == stu[i].number)
+		{
+			printf ("找到该生记录，如下所示 ： \n");
+			AA;
+			GG;
+			AA;
+			showID (stu, i);
+			getchar ();
+			printf ("是否保存该学生信息? (Y / N)\n");
+			scanf ("%c", &ch);
+			if (ch == 'Y' || ch == 'y')
+			{
+				getchar();
+				file (stu, number);
+				printf ("保存成功！");
+			}
+			return;
+		}
+	}
+	printf ("没有找到该生记录！");
+}
